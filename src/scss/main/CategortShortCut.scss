@@ -1,0 +1,54 @@
+@import "../util/style.scss", "../util/variables.scss";
+.category-shortcut {
+    .category-shortcut-inner {
+        .category-shortcut-items {
+            display: flex;
+            gap: 20px;
+            .category-shortcut-item {
+                flex: 1;
+                height: 130px;
+                box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.1);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                em {
+                    font-size: 20px;
+                    color: $dark-black;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .bi {
+                        transform: translateY(-2px);
+                    }
+                }
+                span {
+                    font-size: 16px;
+                }
+                &:nth-child(1) em {
+                    background-color: rgba($color: $royalblue, $alpha: 0.2);
+                }
+                &:nth-child(2) em {
+                    background-color: rgba($color: $orange, $alpha: 0.2);
+                }
+                &:nth-child(3) em {
+                    background-color: rgba($color: $tomato, $alpha: 0.2);
+                }
+                &:nth-child(4) em {
+                    background-color: rgba($color: $forestgreen, $alpha: 0.2);
+                }
+                &:nth-child(5) em {
+                    background-color: rgba($color: $crimson, $alpha: 0.2);
+                }
+                &:nth-child(6) em {
+                    background-color: rgba($color: $turquoise, $alpha: 0.2);
+                }
+            }
+        }
+    }
+}

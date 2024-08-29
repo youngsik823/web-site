@@ -1,0 +1,46 @@
+@import "../util/variables.scss", "../util/reset.scss";
+
+.front-slider {
+    .front-slider-items {
+        .front-slider-item {
+            &.item-1 {
+                background-color: #f8efe4;
+            }
+            &.item-2 {
+                background-color: #f6e58d;
+            }
+            &.item-3 {
+                background-color: #c8d6e5;
+            }
+            cursor: pointer;
+            .front-slider-item-wrap {
+                width: 1160px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 400px;
+                .desc {
+                    font-family: $secondary-kr;
+                    b {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: $crimson;
+                    }
+                    h1 {
+                        font-size: 34px;
+                        margin: 15px 0;
+                    }
+                    span {
+                        font-size: 15px;
+                    }
+                }
+                .pic {
+                    img {
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}

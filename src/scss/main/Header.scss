@@ -1,0 +1,174 @@
+@import "../util/variables.scss", "../util/reset.scss";
+header {
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    border-bottom: 1px solid $silver-gray;
+    position: relative;
+    .header-inner {
+        width: 1160px;
+        .logo-search {
+            display: flex;
+            padding: 15px 0;
+            gap: 20px;
+            .logo {
+                img {
+                }
+            }
+            .search {
+                position: relative;
+                width: 520px;
+                input[type="text"] {
+                    width: 100%;
+                    background-color: $silver-gray;
+                    padding: 7px;
+                    border-radius: 50px;
+                    padding-left: 15px;
+                    &:focus::placeholder {
+                        visibility: hidden;
+                    }
+                    &:focus {
+                        border: 1px solid rgba($color: $royalblue, $alpha: 0.5);
+                        background-color: $white;
+                        box-shadow: 0 0 5px
+                            rgba($color: $royalblue, $alpha: 0.5);
+                    }
+                    &:focus + img {
+                        filter: invert(38%) sepia(78%) saturate(5963%)
+                            hue-rotate(200deg) brightness(94%) contrast(104%);
+                    }
+                }
+                img {
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
+            }
+            .login-register-buttons {
+                margin-left: auto;
+                button {
+                    margin-left: 3px;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    background-color: transparent;
+                    &.btn-login {
+                        border: 1px solid $dim-gray;
+                    }
+                    &.btn-register {
+                        background-color: $forestgreen;
+                        border: 1px solid $forestgreen;
+                        color: $white;
+                    }
+                }
+                display: none;
+            }
+            .user-alarm {
+                margin-left: auto;
+                span {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    width: 20px;
+                    position: relative;
+                    .bi {
+                        font-size: 20px;
+                    }
+                    em {
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        background-color: $tomato;
+                        border-radius: 50%;
+                        right: 0.5px;
+                        &::before {
+                            content: attr(data-count);
+                            color: $white;
+                            font-size: 10px;
+                            font-style: normal;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .alarm {
+                }
+                .avatar {
+                    img {
+                        height: 28px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .gnb {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            a {
+                font-weight: 400;
+                color: $dim-black;
+                &::after {
+                    content: "·";
+                    padding-left: 7px;
+                }
+                &:last-child::after {
+                    display: none;
+                }
+                &:hover:not(.trigger) {
+                    color: $crimson;
+                    &::after {
+                        color: $dim-black;
+                    }
+                }
+            }
+            .trigger {
+                &::before {
+                    content: "";
+                    background: url("../../../public/images/icon-category.png");
+                    width: 20px;
+                    height: 18px;
+                    display: inline-block;
+                    margin-right: 5px;
+                    transform: translateY(4px);
+                }
+            }
+        }
+    }
+    .mega-navi {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: $dark-black;
+        display: none;
+        width: 100%;
+        .mega-navi-inner {
+            width: 1160px;
+            margin: auto;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            .mega-navi-item {
+                color: $white;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.8em;
+                flex: 1;
+                b {
+                }
+                .mega-navi-item-wrap {
+               
+                    a {
+                        display: block;
+                        color: $dark-gray;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
