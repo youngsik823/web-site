@@ -142,8 +142,12 @@ header {
         left: 0;
         top: 100%;
         background-color: $dark-black;
-        display: none;
         width: 100%;
+        display: none;
+        z-index: 1;
+        &.visible {
+            display: block; 
+        }
         .mega-navi-inner {
             width: 1160px;
             margin: auto;
@@ -157,9 +161,10 @@ header {
                 line-height: 1.8em;
                 flex: 1;
                 b {
+                    color: $white;
+                    font-weight: 500;
                 }
                 .mega-navi-item-wrap {
-               
                     a {
                         display: block;
                         color: $dark-gray;

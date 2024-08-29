@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../scss/main/Header.scss";
 
 const Header = () => {
+    const [isMegaNaviVisible, setMegaNaviVisible] = useState(false);
+
+    const handleToggleMegaNavi = (e) => {
+        e.preventDefault(); // 링크 클릭 시 페이지 이동 방지
+        setMegaNaviVisible(!isMegaNaviVisible);
+    };
+
     return (
         <header>
             <div className="header-inner">
@@ -38,7 +45,11 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="gnb">
-                    <a className="trigger" href="#">
+                    <a
+                        className="trigger"
+                        href="#"
+                        onClick={handleToggleMegaNavi}
+                    >
                         전체 카테고리
                     </a>
                     <a href="#">베스트 클래스</a>
@@ -48,7 +59,7 @@ const Header = () => {
                     <a href="#">시그니쳐 클래스</a>
                 </div>
             </div>
-            <div className="mega-navi">
+            <div className={`mega-navi ${isMegaNaviVisible ? 'visible' : ''}`}>
                 <div className="mega-navi-inner">
                     <div className="mega-navi-item">
                         <b>개발·프로그래밍</b>
