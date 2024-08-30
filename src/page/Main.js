@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../component/main/Header";
 import FrontSlider from "../component/main/FrontSlider";
 import CategortShortCut from "../component/main/CategortShortCut";
+import FocusClass from "../component/main/FocusClass";
 
 const Main = () => {
     return (
@@ -9,9 +10,7 @@ const Main = () => {
             <Header />
             <FrontSlider />
             <CategortShortCut />
-            <section className="focus-class">
-                <div className="focus-class-inner"></div>
-            </section>
+            <FocusClass />
             <section className="best-class">
                 <div className="best-class-inner"></div>
             </section>

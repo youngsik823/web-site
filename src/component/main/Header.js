@@ -5,7 +5,7 @@ const Header = () => {
     const [isMegaNaviVisible, setMegaNaviVisible] = useState(false);
 
     const handleToggleMegaNavi = (e) => {
-        e.preventDefault(); // 링크 클릭 시 페이지 이동 방지
+        e.preventDefault();
         setMegaNaviVisible(!isMegaNaviVisible);
     };
 

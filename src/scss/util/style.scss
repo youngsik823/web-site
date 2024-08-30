@@ -3,6 +3,7 @@
 
 * {
     font-family: $primary-kr;
+    color: $dark-black;
 }
 body {
     font-weight: 300;
@@ -15,7 +16,25 @@ section:not(.front-slider) {
     padding: 65px 0;
 }
 
-[class*=inner] {
+[class*="inner"] {
     width: 1160px;
     margin: auto;
+}
+.focus-class-content {
+    .front-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $secondary-kr;
+        height: 50px;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+        a {
+            font-size: 14px;
+            color: $dim-black;
+        }
+    }
 }
