@@ -1,0 +1,46 @@
+@import "../util/variables.scss";
+@import "../util/reset.scss";
+.best-class {
+    .best-class-inner {
+        .best-class-content {
+            .best-class-wrap {
+                display: flex;
+                gap: 25px;
+                .invite-banner {
+                    img {
+                        height: 280px;
+                    }
+                }
+                .best-class-items-outer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    justify-content: space-between;
+                    .best-class-items {
+                        display: flex;
+                        gap: 15px;
+
+                        .best-class-item {
+                            flex: 1;
+                            display: flex;
+                            gap: 15px;
+                            cursor: pointer;
+                            .thum {
+                                width: 130px;
+                                img {
+                                    object-fit: cover;
+                                    width: inherit;
+                                    height: inherit;
+                                    border-radius: 3px;
+                                }
+                            }
+                            .overview {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

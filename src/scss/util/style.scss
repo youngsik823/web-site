@@ -20,21 +20,20 @@ section:not(.front-slider) {
     width: 1160px;
     margin: auto;
 }
-.focus-class-content {
-    .front-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: $secondary-kr;
-        height: 50px;
-        margin-bottom: 20px;
-        h2 {
-            font-size: 24px;
-            font-weight: 500;
-        }
-        a {
-            font-size: 14px;
-            color: $dim-black;
-        }
+
+.front-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $secondary-kr;
+    height: 50px;
+    margin-bottom: 20px;
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    a {
+        font-size: 14px;
+        color: $dim-black;
     }
 }

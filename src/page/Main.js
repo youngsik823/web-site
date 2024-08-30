@@ -3,6 +3,7 @@ import Header from "../component/main/Header";
 import FrontSlider from "../component/main/FrontSlider";
 import CategortShortCut from "../component/main/CategortShortCut";
 import FocusClass from "../component/main/FocusClass";
+import BestClass from "../component/main/BestClass";
 
 const Main = () => {
     return (
@@ -11,9 +12,7 @@ const Main = () => {
             <FrontSlider />
             <CategortShortCut />
             <FocusClass />
-            <section className="best-class">
-                <div className="best-class-inner"></div>
-            </section>
+            <BestClass />
             <section className="early-bird">
                 <div className="early-bird-inner"></div>
             </section>
